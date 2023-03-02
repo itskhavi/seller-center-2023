@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <!-- font family rubik -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- font awesome cdn link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- owl slider cdn links -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn link -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.scss" />
+    <link rel="stylesheet" href="css/responsive/responsive.css" />
+    <!-- custom cdn links -->
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header-top-child">
+          <div id="logo">
+            <div id="humburger" class="toggle-p">
+              <img src="img/hamburger.svg" alt="" />
+            </div>
+            <img src="img/logo1.svg" alt="" />
+          </div>
+          <!-- logo -->
+          <div class="input-top-wrap">
+            <h4 class="mb-0">SELLER CENTER</h4>
+          </div>
+          <div class="wrap-icon-top">
+            <div class="icon-1">
+              <a href="#">
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.0001 22C13.1001 22 14.0001 21.1 14.0001 20H10.0001C10.0001 21.1 10.8901 22 12.0001 22ZM18.0001 16V11C18.0001 7.93 16.3601 5.36 13.5001 4.68V4C13.5001 3.17 12.8301 2.5 12.0001 2.5C11.1701 2.5 10.5001 3.17 10.5001 4V4.68C7.63005 5.36 6.00005 7.92 6.00005 11V16L4.71005 17.29C4.08005 17.92 4.52005 19 5.41005 19H18.5801C19.4701 19 19.9201 17.92 19.2901 17.29L18.0001 16Z"
+                      fill="#969696"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <!-- 1 -->
+            <div class="icon-1">
+              <div class="avatar">
+                <img src="img/Avatar.png" alt="" />
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  id="user-data"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop Name
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="user-data"
+                  style="position: absolute;"
+                  data-popper-placement="bottom-end"
+                >
+                  <!-- item-->
+                  <a class="dropdown-item" href="wallet.html">
+                    <i class="bx bx-wallet font-size-16 align-middle me-1"></i>
+                    <span key="t-my-wallet">My Wallet</span>
+                  </a>
+                  <a class="dropdown-item d-block" href="general_details.html">
+                    <i class="bx bx-wrench font-size-16 align-middle me-1"></i>
+                    <span key="t-settings">Profile Settings</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-danger" href="#">
+                    <i
+                      class="bx bx-power-off font-size-16 align-middle me-1 text-danger"
+                    ></i>
+                    <span key="t-logout">Logout</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+          </div>
+        </div>
+        <div class="input-top-bottom">
+          <h4 class="mb-0 text-center">SELLER CENTER</h4>
+        </div>
+      </div>
+    </header>
+
+    <!-- end header -->
+
+    <div class="wrap-dashboard">
+      <div class="nav-fixed">
+        <div>
+          <ul class="nav-ul-fixed">
+            <li class="li-active">
+              <a class="a-active" href="index.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-active"
+                      d="M20.0198 11V21H4.01978V11"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-active"
+                      d="M2.92113 6.8883C2.15636 8.86885 3.63151 11 5.75458 11C7.41143 11 8.76378 9.65685 8.76378 8C8.76378 9.65685 10.1069 11 11.7638 11H12.273C13.9298 11 15.273 9.65685 15.273 8C15.273 9.65685 16.6259 11 18.2827 11C20.4069 11 21.8835 8.8676 21.1181 6.88615L19.6168 3H4.42259L2.92113 6.8883Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Home
+              </a>
+            </li>
+            <!-- 1 -->
+            <li>
+              <a href="product.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M9 3H4C3.44772 3 3 3.57563 3 4.28571V10.7143C3 11.4244 3.44772 12 4 12H9C9.55228 12 10 11.4244 10 10.7143V4.28571C10 3.57563 9.55228 3 9 3Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M9 16H4C3.44772 16 3 16.3198 3 16.7143V20.2857C3 20.6802 3.44772 21 4 21H9C9.55228 21 10 20.6802 10 20.2857V16.7143C10 16.3198 9.55228 16 9 16Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M20 3H15C14.4477 3 14 3.3198 14 3.71429V7.28571C14 7.6802 14.4477 8 15 8H20C20.5523 8 21 7.6802 21 7.28571V3.71429C21 3.3198 20.5523 3 20 3Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M20 12H15C14.4477 12 14 12.5756 14 13.2857V19.7143C14 20.4244 14.4477 21 15 21H20C20.5523 21 21 20.4244 21 19.7143V13.2857C21 12.5756 20.5523 12 20 12Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Products
+              </a>
+            </li>
+            <!-- 2 -->
+            <li>
+              <a href="orders.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 7.5H21L20 21H4L3 7.5Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M8 9.5V3H16V9.5"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M8 17H16"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                Orders
+              </a>
+            </li>
+            <!-- 3 -->
+            <li>
+              <a href="#">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M17 5V2H4V19L7 17.5"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M7 22V5H20V22L13.5 18.8636L7 22Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Promotions
+              </a>
+            </li>
+            <!-- 4 -->
+            <li>
+              <a href="user_orders.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M22 2.5H2V8.5H22V2.5Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M2 20.5151L8.0878 14.3646L11.3774 17.5151L15.3991 13.5L17.6394 15.684"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M22 8.08594V21.0859"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M2 8.08594V15.0859"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M6.50781 21.5H22.0001"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M8.5 5.5H19"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M5 5.49829H5.5"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                Reports
+              </a>
+            </li>
+            <!-- 5 -->
+            <li>
+              <a href="general_details.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M19.8753 13.078L18.883 12.954L18.8127 13.5165L19.2593 13.8657L19.8753 13.078ZM19.8753 10.922L19.2593 10.1343L18.8127 10.4835L18.883 11.046L19.8753 10.922ZM22.1963 9.107L22.8123 9.89475L22.8159 9.89188L22.1963 9.107ZM22.3283 8.403L23.2062 7.92415L23.2002 7.91328L23.194 7.90256L22.3283 8.403ZM20.1283 4.597L19.2504 5.07585L19.2563 5.08672L19.2625 5.09744L20.1283 4.597ZM19.4573 4.355L19.1155 3.41521L19.1 3.42087L19.0846 3.42704L19.4573 4.355ZM16.7183 5.455L16.1086 6.24762L16.5611 6.59575L17.0909 6.38296L16.7183 5.455ZM14.8593 4.377L13.8694 4.51894L13.9506 5.08532L14.48 5.30231L14.8593 4.377ZM14.4413 1.462L13.449 1.58603L13.4501 1.595L13.4514 1.60394L14.4413 1.462ZM8.96326 1.462L9.95314 1.60394L9.95442 1.595L9.95554 1.58603L8.96326 1.462ZM8.54526 4.377L8.92449 5.30231L9.45392 5.08532L9.53514 4.51894L8.54526 4.377ZM6.68626 5.455L6.31359 6.38296L6.83594 6.59274L7.28626 6.255L6.68626 5.455ZM3.94726 4.355L4.31996 3.427L4.31166 3.42376L3.94726 4.355ZM3.27626 4.597L4.14203 5.09744L4.14823 5.08672L4.15416 5.07585L3.27626 4.597ZM1.07626 8.403L1.93723 8.91175L1.94203 8.90344L1.07626 8.403ZM1.20826 9.107L0.588614 9.89189L0.592258 9.89474L1.20826 9.107ZM3.52926 10.922L4.52154 11.046L4.59186 10.4835L4.14527 10.1343L3.52926 10.922ZM3.52926 13.078L4.14527 13.8657L4.59186 13.5165L4.52154 12.954L3.52926 13.078ZM1.20826 14.893L0.592252 14.1053L0.58862 14.1081L1.20826 14.893ZM1.07626 15.597L0.198369 16.0759L0.204299 16.0867L0.210496 16.0974L1.07626 15.597ZM3.27626 19.403L4.15416 18.9241L4.14823 18.9133L4.14203 18.9026L3.27626 19.403ZM3.94726 19.645L4.28901 20.5848L4.30457 20.5791L4.31994 20.573L3.94726 19.645ZM6.68626 18.545L7.29598 17.7524L6.84342 17.4043L6.31359 17.617L6.68626 18.545ZM8.54526 19.623L9.53514 19.4811L9.45392 18.9147L8.92449 18.6977L8.54526 19.623ZM8.96326 22.538L9.95554 22.414L9.95442 22.405L9.95314 22.3961L8.96326 22.538ZM14.4413 22.538L13.4514 22.3961L13.4501 22.405L13.449 22.414L14.4413 22.538ZM14.8593 19.623L14.48 18.6977L13.9506 18.9147L13.8694 19.4811L14.8593 19.623ZM16.7183 18.545L17.0909 17.617L16.5686 17.4073L16.1183 17.745L16.7183 18.545ZM19.4573 19.645L19.0846 20.573L19.0929 20.5762L19.4573 19.645ZM20.1283 19.403L19.2625 18.9026L19.2563 18.9133L19.2504 18.9241L20.1283 19.403ZM22.3283 15.597L23.194 16.0974L23.2002 16.0867L23.2062 16.0759L22.3283 15.597ZM22.1963 14.893L22.8159 14.1081L22.8123 14.1053L22.1963 14.893ZM20.8675 13.202C20.914 12.8305 20.9523 12.4327 20.9523 12H18.9523C18.9523 12.3153 18.9245 12.6215 18.883 12.954L20.8675 13.202ZM20.9523 12C20.9523 11.5673 20.914 11.1695 20.8675 10.798L18.883 11.046C18.9245 11.3785 18.9523 11.6847 18.9523 12H20.9523ZM20.4913 11.7097L22.8123 9.89474L21.5803 8.31926L19.2593 10.1343L20.4913 11.7097ZM22.8159 9.89188C23.4304 9.40679 23.5573 8.56791 23.2062 7.92415L21.4504 8.88185C21.3632 8.72209 21.3802 8.47721 21.5766 8.32212L22.8159 9.89188ZM23.194 7.90256L20.994 4.09656L19.2625 5.09744L21.4625 8.90344L23.194 7.90256ZM21.0062 4.11815C20.6104 3.39252 19.7669 3.17834 19.1155 3.41521L19.799 5.29479C19.6995 5.33097 19.5997 5.32889 19.5113 5.29876C19.4175 5.26678 19.3152 5.19464 19.2504 5.07585L21.0062 4.11815ZM19.0846 3.42704L16.3456 4.52704L17.0909 6.38296L19.8299 5.28296L19.0846 3.42704ZM17.328 4.66238C16.6907 4.17219 15.9979 3.76293 15.2385 3.45169L14.48 5.30231C15.0626 5.54107 15.6018 5.85781 16.1086 6.24762L17.328 4.66238ZM15.8491 4.23506L15.4311 1.32006L13.4514 1.60394L13.8694 4.51894L15.8491 4.23506ZM15.4335 1.33797C15.3348 0.547994 14.6554 0 13.9023 0V2C13.6991 2 13.4817 1.84801 13.449 1.58603L15.4335 1.33797ZM13.9023 0H9.50226V2H13.9023V0ZM9.50226 0C8.74911 0 8.06973 0.547994 7.97099 1.33797L9.95554 1.58603C9.9228 1.84801 9.70542 2 9.50226 2V0ZM7.97339 1.32006L7.55539 4.23506L9.53514 4.51894L9.95314 1.60394L7.97339 1.32006ZM8.16604 3.45169C7.3996 3.76581 6.70996 4.18723 6.08626 4.655L7.28626 6.255C7.80657 5.86477 8.34893 5.53819 8.92449 5.30231L8.16604 3.45169ZM7.05894 4.52704L4.31994 3.42704L3.57459 5.28296L6.31359 6.38296L7.05894 4.52704ZM4.31166 3.42376C3.60125 3.14577 2.77738 3.4233 2.39837 4.11815L4.15416 5.07585C4.03915 5.2867 3.78728 5.36623 3.58287 5.28624L4.31166 3.42376ZM2.4105 4.09656L0.210496 7.90256L1.94203 8.90344L4.14203 5.09744L2.4105 4.09656ZM0.215338 7.89427C-0.191986 8.58359 0.00205779 9.42881 0.58862 9.89188L1.82791 8.32212C1.99647 8.45519 2.05852 8.70641 1.93719 8.91173L0.215338 7.89427ZM0.592258 9.89474L2.91326 11.7097L4.14527 10.1343L1.82427 8.31926L0.592258 9.89474ZM2.53699 10.798C2.49043 11.1704 2.45226 11.5789 2.45226 12H4.45226C4.45226 11.6951 4.4801 11.3776 4.52154 11.046L2.53699 10.798ZM2.45226 12C2.45226 12.4211 2.49043 12.8296 2.53699 13.202L4.52154 12.954C4.4801 12.6224 4.45226 12.3049 4.45226 12H2.45226ZM2.91326 12.2903L0.592258 14.1053L1.82427 15.6807L4.14527 13.8657L2.91326 12.2903ZM0.58862 14.1081C-0.0258387 14.5932 -0.15277 15.4321 0.198369 16.0759L1.95416 15.1181C2.0413 15.2779 2.02437 15.5228 1.82791 15.6779L0.58862 14.1081ZM0.210496 16.0974L2.4105 19.9034L4.14203 18.9026L1.94203 15.0966L0.210496 16.0974ZM2.39837 19.8819C2.79417 20.6075 3.63761 20.8217 4.28901 20.5848L3.60552 18.7052C3.705 18.669 3.8048 18.6711 3.89319 18.7012C3.987 18.7332 4.08937 18.8054 4.15416 18.9241L2.39837 19.8819ZM4.31994 20.573L7.05894 19.473L6.31359 17.617L3.57459 18.717L4.31994 20.573ZM6.07655 19.3376C6.71379 19.8278 7.40664 20.2371 8.16604 20.5483L8.92449 18.6977C8.34189 18.4589 7.80274 18.1422 7.29598 17.7524L6.07655 19.3376ZM7.55539 19.7649L7.97339 22.6799L9.95314 22.3961L9.53514 19.4811L7.55539 19.7649ZM7.97099 22.662C8.06973 23.452 8.74911 24 9.50226 24V22C9.70542 22 9.9228 22.152 9.95554 22.414L7.97099 22.662ZM9.50226 24H13.9023V22H9.50226V24ZM13.9023 24C14.6554 24 15.3348 23.452 15.4335 22.662L13.449 22.414C13.4817 22.152 13.6991 22 13.9023 22V24ZM15.4311 22.6799L15.8491 19.7649L13.8694 19.4811L13.4514 22.3961L15.4311 22.6799ZM15.2385 20.5483C16.0049 20.2342 16.6946 19.8128 17.3183 19.345L16.1183 17.745C15.598 18.1352 15.0556 18.4618 14.48 18.6977L15.2385 20.5483ZM16.3456 19.473L19.0846 20.573L19.8299 18.717L17.0909 17.617L16.3456 19.473ZM19.0929 20.5762C19.8033 20.8542 20.6272 20.5767 21.0062 19.8819L19.2504 18.9241C19.3654 18.7133 19.6172 18.6338 19.8217 18.7138L19.0929 20.5762ZM20.994 19.9034L23.194 16.0974L21.4625 15.0966L19.2625 18.9026L20.994 19.9034ZM23.2062 16.0759C23.5573 15.4321 23.4304 14.5932 22.8159 14.1081L21.5766 15.6779C21.3802 15.5228 21.3632 15.2779 21.4504 15.1181L23.2062 16.0759ZM22.8123 14.1053L20.4913 12.2903L19.2593 13.8657L21.5803 15.6807L22.8123 14.1053ZM11.7022 14.85C10.1315 14.85 8.85223 13.5707 8.85223 12H6.85223C6.85223 14.6753 9.02695 16.85 11.7022 16.85V14.85ZM8.85223 12C8.85223 10.4293 10.1315 9.15002 11.7022 9.15002V7.15002C9.02695 7.15002 6.85223 9.32474 6.85223 12H8.85223ZM11.7022 9.15002C13.2729 9.15002 14.5522 10.4293 14.5522 12H16.5522C16.5522 9.32474 14.3775 7.15002 11.7022 7.15002V9.15002ZM14.5522 12C14.5522 13.5707 13.2729 14.85 11.7022 14.85V16.85C14.3775 16.85 16.5522 14.6753 16.5522 12H14.5522Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+                Settings
+              </a>
+            </li>
+            <!-- 6 -->
+            <li>
+              <a href="wallet.html">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M19.8753 13.078L18.883 12.954L18.8127 13.5165L19.2593 13.8657L19.8753 13.078ZM19.8753 10.922L19.2593 10.1343L18.8127 10.4835L18.883 11.046L19.8753 10.922ZM22.1963 9.107L22.8123 9.89475L22.8159 9.89188L22.1963 9.107ZM22.3283 8.403L23.2062 7.92415L23.2002 7.91328L23.194 7.90256L22.3283 8.403ZM20.1283 4.597L19.2504 5.07585L19.2563 5.08672L19.2625 5.09744L20.1283 4.597ZM19.4573 4.355L19.1155 3.41521L19.1 3.42087L19.0846 3.42704L19.4573 4.355ZM16.7183 5.455L16.1086 6.24762L16.5611 6.59575L17.0909 6.38296L16.7183 5.455ZM14.8593 4.377L13.8694 4.51894L13.9506 5.08532L14.48 5.30231L14.8593 4.377ZM14.4413 1.462L13.449 1.58603L13.4501 1.595L13.4514 1.60394L14.4413 1.462ZM8.96326 1.462L9.95314 1.60394L9.95442 1.595L9.95554 1.58603L8.96326 1.462ZM8.54526 4.377L8.92449 5.30231L9.45392 5.08532L9.53514 4.51894L8.54526 4.377ZM6.68626 5.455L6.31359 6.38296L6.83594 6.59274L7.28626 6.255L6.68626 5.455ZM3.94726 4.355L4.31996 3.427L4.31166 3.42376L3.94726 4.355ZM3.27626 4.597L4.14203 5.09744L4.14823 5.08672L4.15416 5.07585L3.27626 4.597ZM1.07626 8.403L1.93723 8.91175L1.94203 8.90344L1.07626 8.403ZM1.20826 9.107L0.588614 9.89189L0.592258 9.89474L1.20826 9.107ZM3.52926 10.922L4.52154 11.046L4.59186 10.4835L4.14527 10.1343L3.52926 10.922ZM3.52926 13.078L4.14527 13.8657L4.59186 13.5165L4.52154 12.954L3.52926 13.078ZM1.20826 14.893L0.592252 14.1053L0.58862 14.1081L1.20826 14.893ZM1.07626 15.597L0.198369 16.0759L0.204299 16.0867L0.210496 16.0974L1.07626 15.597ZM3.27626 19.403L4.15416 18.9241L4.14823 18.9133L4.14203 18.9026L3.27626 19.403ZM3.94726 19.645L4.28901 20.5848L4.30457 20.5791L4.31994 20.573L3.94726 19.645ZM6.68626 18.545L7.29598 17.7524L6.84342 17.4043L6.31359 17.617L6.68626 18.545ZM8.54526 19.623L9.53514 19.4811L9.45392 18.9147L8.92449 18.6977L8.54526 19.623ZM8.96326 22.538L9.95554 22.414L9.95442 22.405L9.95314 22.3961L8.96326 22.538ZM14.4413 22.538L13.4514 22.3961L13.4501 22.405L13.449 22.414L14.4413 22.538ZM14.8593 19.623L14.48 18.6977L13.9506 18.9147L13.8694 19.4811L14.8593 19.623ZM16.7183 18.545L17.0909 17.617L16.5686 17.4073L16.1183 17.745L16.7183 18.545ZM19.4573 19.645L19.0846 20.573L19.0929 20.5762L19.4573 19.645ZM20.1283 19.403L19.2625 18.9026L19.2563 18.9133L19.2504 18.9241L20.1283 19.403ZM22.3283 15.597L23.194 16.0974L23.2002 16.0867L23.2062 16.0759L22.3283 15.597ZM22.1963 14.893L22.8159 14.1081L22.8123 14.1053L22.1963 14.893ZM20.8675 13.202C20.914 12.8305 20.9523 12.4327 20.9523 12H18.9523C18.9523 12.3153 18.9245 12.6215 18.883 12.954L20.8675 13.202ZM20.9523 12C20.9523 11.5673 20.914 11.1695 20.8675 10.798L18.883 11.046C18.9245 11.3785 18.9523 11.6847 18.9523 12H20.9523ZM20.4913 11.7097L22.8123 9.89474L21.5803 8.31926L19.2593 10.1343L20.4913 11.7097ZM22.8159 9.89188C23.4304 9.40679 23.5573 8.56791 23.2062 7.92415L21.4504 8.88185C21.3632 8.72209 21.3802 8.47721 21.5766 8.32212L22.8159 9.89188ZM23.194 7.90256L20.994 4.09656L19.2625 5.09744L21.4625 8.90344L23.194 7.90256ZM21.0062 4.11815C20.6104 3.39252 19.7669 3.17834 19.1155 3.41521L19.799 5.29479C19.6995 5.33097 19.5997 5.32889 19.5113 5.29876C19.4175 5.26678 19.3152 5.19464 19.2504 5.07585L21.0062 4.11815ZM19.0846 3.42704L16.3456 4.52704L17.0909 6.38296L19.8299 5.28296L19.0846 3.42704ZM17.328 4.66238C16.6907 4.17219 15.9979 3.76293 15.2385 3.45169L14.48 5.30231C15.0626 5.54107 15.6018 5.85781 16.1086 6.24762L17.328 4.66238ZM15.8491 4.23506L15.4311 1.32006L13.4514 1.60394L13.8694 4.51894L15.8491 4.23506ZM15.4335 1.33797C15.3348 0.547994 14.6554 0 13.9023 0V2C13.6991 2 13.4817 1.84801 13.449 1.58603L15.4335 1.33797ZM13.9023 0H9.50226V2H13.9023V0ZM9.50226 0C8.74911 0 8.06973 0.547994 7.97099 1.33797L9.95554 1.58603C9.9228 1.84801 9.70542 2 9.50226 2V0ZM7.97339 1.32006L7.55539 4.23506L9.53514 4.51894L9.95314 1.60394L7.97339 1.32006ZM8.16604 3.45169C7.3996 3.76581 6.70996 4.18723 6.08626 4.655L7.28626 6.255C7.80657 5.86477 8.34893 5.53819 8.92449 5.30231L8.16604 3.45169ZM7.05894 4.52704L4.31994 3.42704L3.57459 5.28296L6.31359 6.38296L7.05894 4.52704ZM4.31166 3.42376C3.60125 3.14577 2.77738 3.4233 2.39837 4.11815L4.15416 5.07585C4.03915 5.2867 3.78728 5.36623 3.58287 5.28624L4.31166 3.42376ZM2.4105 4.09656L0.210496 7.90256L1.94203 8.90344L4.14203 5.09744L2.4105 4.09656ZM0.215338 7.89427C-0.191986 8.58359 0.00205779 9.42881 0.58862 9.89188L1.82791 8.32212C1.99647 8.45519 2.05852 8.70641 1.93719 8.91173L0.215338 7.89427ZM0.592258 9.89474L2.91326 11.7097L4.14527 10.1343L1.82427 8.31926L0.592258 9.89474ZM2.53699 10.798C2.49043 11.1704 2.45226 11.5789 2.45226 12H4.45226C4.45226 11.6951 4.4801 11.3776 4.52154 11.046L2.53699 10.798ZM2.45226 12C2.45226 12.4211 2.49043 12.8296 2.53699 13.202L4.52154 12.954C4.4801 12.6224 4.45226 12.3049 4.45226 12H2.45226ZM2.91326 12.2903L0.592258 14.1053L1.82427 15.6807L4.14527 13.8657L2.91326 12.2903ZM0.58862 14.1081C-0.0258387 14.5932 -0.15277 15.4321 0.198369 16.0759L1.95416 15.1181C2.0413 15.2779 2.02437 15.5228 1.82791 15.6779L0.58862 14.1081ZM0.210496 16.0974L2.4105 19.9034L4.14203 18.9026L1.94203 15.0966L0.210496 16.0974ZM2.39837 19.8819C2.79417 20.6075 3.63761 20.8217 4.28901 20.5848L3.60552 18.7052C3.705 18.669 3.8048 18.6711 3.89319 18.7012C3.987 18.7332 4.08937 18.8054 4.15416 18.9241L2.39837 19.8819ZM4.31994 20.573L7.05894 19.473L6.31359 17.617L3.57459 18.717L4.31994 20.573ZM6.07655 19.3376C6.71379 19.8278 7.40664 20.2371 8.16604 20.5483L8.92449 18.6977C8.34189 18.4589 7.80274 18.1422 7.29598 17.7524L6.07655 19.3376ZM7.55539 19.7649L7.97339 22.6799L9.95314 22.3961L9.53514 19.4811L7.55539 19.7649ZM7.97099 22.662C8.06973 23.452 8.74911 24 9.50226 24V22C9.70542 22 9.9228 22.152 9.95554 22.414L7.97099 22.662ZM9.50226 24H13.9023V22H9.50226V24ZM13.9023 24C14.6554 24 15.3348 23.452 15.4335 22.662L13.449 22.414C13.4817 22.152 13.6991 22 13.9023 22V24ZM15.4311 22.6799L15.8491 19.7649L13.8694 19.4811L13.4514 22.3961L15.4311 22.6799ZM15.2385 20.5483C16.0049 20.2342 16.6946 19.8128 17.3183 19.345L16.1183 17.745C15.598 18.1352 15.0556 18.4618 14.48 18.6977L15.2385 20.5483ZM16.3456 19.473L19.0846 20.573L19.8299 18.717L17.0909 17.617L16.3456 19.473ZM19.0929 20.5762C19.8033 20.8542 20.6272 20.5767 21.0062 19.8819L19.2504 18.9241C19.3654 18.7133 19.6172 18.6338 19.8217 18.7138L19.0929 20.5762ZM20.994 19.9034L23.194 16.0974L21.4625 15.0966L19.2625 18.9026L20.994 19.9034ZM23.2062 16.0759C23.5573 15.4321 23.4304 14.5932 22.8159 14.1081L21.5766 15.6779C21.3802 15.5228 21.3632 15.2779 21.4504 15.1181L23.2062 16.0759ZM22.8123 14.1053L20.4913 12.2903L19.2593 13.8657L21.5803 15.6807L22.8123 14.1053ZM11.7022 14.85C10.1315 14.85 8.85223 13.5707 8.85223 12H6.85223C6.85223 14.6753 9.02695 16.85 11.7022 16.85V14.85ZM8.85223 12C8.85223 10.4293 10.1315 9.15002 11.7022 9.15002V7.15002C9.02695 7.15002 6.85223 9.32474 6.85223 12H8.85223ZM11.7022 9.15002C13.2729 9.15002 14.5522 10.4293 14.5522 12H16.5522C16.5522 9.32474 14.3775 7.15002 11.7022 7.15002V9.15002ZM14.5522 12C14.5522 13.5707 13.2729 14.85 11.7022 14.85V16.85C14.3775 16.85 16.5522 14.6753 16.5522 12H14.5522Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+                Wallet
+              </a>
+            </li>
+            <!-- 6 -->
+            <li>
+              <a href="#">
+                <div class="nav-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="path-hover"
+                      d="M12 22C14.7614 22 17.2614 20.8807 19.0711 19.0711C20.8807 17.2614 22 14.7614 22 12C22 9.2386 20.8807 6.7386 19.0711 4.92893C17.2614 3.11929 14.7614 2 12 2C9.2386 2 6.7386 3.11929 4.92893 4.92893C3.11929 6.7386 2 9.2386 2 12C2 14.7614 3.11929 17.2614 4.92893 19.0711C6.7386 20.8807 9.2386 22 12 22Z"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M13 17.25C13 17.8023 12.5523 18.25 12 18.25C11.4477 18.25 11 17.8023 11 17.25C11 16.6977 11.4477 16.25 12 16.25C12.5523 16.25 13 16.6977 13 17.25Z"
+                      stroke=""
+                      stroke-width="0.5"
+                    />
+                    <path
+                      class="path-hover"
+                      d="M12 6V14"
+                      stroke=""
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Help
+              </a>
+            </li>
+            <!-- 7 -->
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-details">
+        <div class="hero-child-2">
+          <div class="hero-h2">
+            <h3 class="mb-0">Dashboard</h3>
+            <a href="">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+              Add Purchase
+            </a>
+            <a href="">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              Manage User
+            </a>
+
+            <!-- <button type="button">Generate Report</button> -->
+          </div>
+          <div class="cards">
+            <div class="card-1">
+              <div class="c-details">
+                <h4>Cash Sales</h4>
+                <div class="sale">
+                  <small>Ksh.</small>
+                  <p>568,000</p>
+                </div>
+                <div class="tip"><small>+25%</small></div>
+                <div class="icon-bg">
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-o"><div class="c-details">
+                <h4>BNPL Sales</h4>
+                <div class="sale">
+                  <small>Ksh.</small>
+                  <p>4,568,000</p>
+                </div>
+                <div class="tip"><small>+25%</small></div>
+                <div class="icon-bg">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                </div>
+              </div></div>
+            <div class="card-o"><div class="c-details">
+                <h4>Orders</h4>
+                <div class="sale">
+                  <small>Sum.</small>
+                  <p>1,568</p>
+                </div>
+                <div class="tip1"><small>-45%</small></div>
+                <div class="icon-bg">
+                  <a href="">
+                    <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+                    Manage Orders
+                  </a>
+                </div>
+              </div></div>
+            <div class="card-2"><div class="c-details">
+                <h4>Total Revenue</h4>
+                <div class="sale">
+                  <small>Ksh.</small>
+                  <p>5,568,000</p>
+                </div>
+                <div class="tip"><small>+25%</small></div>
+                <div class="icon-bg">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                </div>
+              </div></div>
+            <div class="card-3"><div class="c-details">
+                <h4>Total Purchases</h4>
+                <div class="sale">
+                  <small>Ksh.</small>
+                  <p>5,568,000</p>
+                </div>
+                <div class="tip"><small>+25%</small></div>
+                <div class="icon-bg">
+                  <a href="">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    Add Purchase
+                  </a>
+                </div>
+              </div></div>
+          </div>
+        </div>
+        <!-- slider -->
+
+      
+
+        <div class="chart-wrap">
+          <div class="chart-div">
+            <div>
+              <h5 class="ps-2 pt-2 fst-normal">Annual Sales Graph</h5>
+              <canvas id="chart-1"></canvas>
+            </div>
+          </div>
+          <div class="chart-div">
+            <div>
+              <div class="wrap-top-chart">
+                <h5 class="ps-2 pt-2 fst-normal">Products Sale</h5>
+                <div class="chart-top-control dropdown">
+                  <p>Show:</p>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    id="chart-show"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Weekly
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="chart-show">
+                    <li><a class="dropdown-item" href="#">Daily</a></li>
+                    <li><a class="dropdown-item" href="#">Monthly</a></li>
+                    <li><a class="dropdown-item" href="#">Yearly</a></li>
+                  </ul>
+                </div>
+              </div>
+              <canvas id="chart-2"></canvas>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- chart end -->
+
+        <div class="starts-sec">
+         <div class="starts">
+          <div class="total-items">
+            <div class="card-body" >
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-normal text-muted mb-0">Total SKUs</h5>
+                  <span class="h2 font-weight-bold mb-0">11,350</span>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+                
+              </p>
+             
+              <div class="icon-bg">
+                <button type="button"> Manage SKUs</button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="other-stats">
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0" style="border: none;">
+                <div class="card-body" >
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-normal text-muted mb-0">Suppliers</h5>
+                      <span class="h2 font-weight-bold mb-0">3,897</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0" style="border: none; border-radius: 10px;">
+                <div class="card-body" >
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-normal text-muted mb-0">Pending Orders</h5>
+                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon1 icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0" style="border: none;">
+                <div class="card-body" >
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-normal text-muted mb-0">Out of Stock Items</h5>
+                      <span class="h2 font-weight-bold mb-0">350</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon2 icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="card card-stats mb-4 mb-xl-0" style="border: none;">
+                <div class="card-body" >
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-normal text-muted mb-0">Customers</h5>
+                      <span class="h2 font-weight-bold mb-0">50,897</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon3 icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm">
+                    <span class="text-fail mr-2"><i class="fa fa-arrow-down"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="pending"></div>
+            <div class="out-stock"></div>
+            <div class="customers"></div>
+            <div class="suppliers"></div> -->
+          </div>
+         </div>
+        </div>
+
+        <!-- Grid SECTION 2 AFTER CHART -->
+        <div class="sec_2">
+          <div class="heading_g_2">
+            <h3> Stats Overview</h3>
+          </div>
+          <div class="grid_wrapper">
+            <div class="grid_item_2">
+              <div class="tables">
+                <div>
+                    <div class="filters">
+                        <h3>Pending Orders</h3>
+                        <!-- <a href="" id="viewall"> <p>View All >></p></a> -->
+                        <button type="button" id="viewall"> View All</button>
+                        <hr>
+                    </div> <br>
+                    <table>  
+                        
+                        <tr >
+                            <th>Order ID</th>
+                            <th>Item</th>
+                            <th>Customer Name</th>
+                            <th>Phone No.</th>
+                            <th>Date ordered</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kolin Martin</td>
+                            <td>0700588885</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kenya</td>
+                            <td>patazon</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kenya</td>
+                            <td>patazon</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kenya</td>
+                            <td>patazon</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kenya</td>
+                            <td>patazon</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Kenya</td>
+                            <td>patazon</td>
+                            <td>Jun 24,2022
+                                11:20 Am</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        
+                </table>
+    
+    
+                </div>
+            </div>
+            </div>
+            <div class="grid_item_2">
+              <div class="tables">
+                <div>
+                    <div class="filters">
+                        <h3>Low & Out of Stock Items</h3>
+                        <!-- <a href="" id="viewall"> <p>View All >></p></a> -->
+                        <button type="button" id="hideall"> Hide All</button>
+                        <button type="button" id="showall"> Show All</button>
+                        <button type="button" id="viewall1"> View All</button>
+                        <hr>
+                    </div> <br>
+                    <table>  
+                        
+                        <tr >
+                            <th>Item ID</th>
+                            <th>Item</th>
+                            <th>Supplier Name</th>
+                            <th>Phone No.</th>
+                            <th>Units(Remaining)</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Von</td>
+                            <td>0700588885</td>
+                            <td id="nill">0 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Tornado</td>
+                            <td>0700588885</td>
+                            <td id="low">6 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Infinix</td>
+                            <td>0788990066</td>
+                            <td id="nill">0 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Hisense</td>
+                            <td>0754324521</td>
+                            <td id="low">10 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Vitron</td>
+                            <td>0876543222</td>
+                            <td id="nill">0 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>4556688</td>
+                            <td>Hisense 32’ ..</td>
+                            <td>Abdi Sheikh</td>
+                            <td>0785675647</td>
+                            <td id="low1">20 Units left</td>
+                            <td><button type="button">View</button></td>
+                        </tr>
+                        
+                </table>
+    
+    
+                </div>
+            </div>
+            </div>
+            <div class="grid_item_2">
+             
+            </div>
+            <div class="grid_item_2">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chart js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap js link -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owl slider cdn js link -->
+    <script src="js/app.js"></script>
+    <!-- curtom js link -->
+  </body>
+</html>
